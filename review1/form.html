@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>form表单内容复习</title>
+		<style type="text/css">
+			textarea{background-color: aqua;}
+			#formcontext{width: 400px; height: 100dp;border:3px double aliceblue }
+			.fontstyle{width: 800px; height: 600px;}
+		</style>
+	</head>
+	<body>
+		<div id="formcontext" >
+			<form action="https://www.baidu.com/" method="post">
+				用户名：
+				<input type="text" placeholder="请输入姓名" autofocus="autofocus" /><br />
+				密码：
+				<input type="password" placeholder="请输入密码" /><br />
+				性别：
+				<input type="radio" name= "sex" id="nan" checked="checked"><label for="nan">男</label>
+				<input type="radio" name= "sex" id="nv" ><label for="nv">女</label><br/>
+				兴趣爱好：
+				<input type="checkbox" name="intrest"  id="dance" checked="checked"><label for="dance" >跳舞</label>
+				<input type="checkbox" name="intrest"  id="sing"><label for="sing">唱歌</label>
+				<input type="checkbox" name="intrest"  id="shopping"><label for="shopping">购物</label>
+				<input type="checkbox" name="intrest"  id="swim"><label for="swim">游泳</label><br />
+				居住地：
+				<select>
+					<optgroup label="山东省">
+						<option selected="selected">威海市</option>
+						<option>烟台市</option>
+						<option>青岛市</option>
+					</optgroup>
+					<optgroup label="贵州省">
+						<option>花溪区</option>
+						<option>贵阳市</option>
+						<option>麦坪</option>
+					</optgroup>
+				</select><br />
+				<textarea rows="10"  cols="50" placeholder="请输入自我介绍"></textarea><br />
+				<input type="submit" value="提交" />
+				<input type="reset" value="重置" disabled="disabled" />
+			</form>
+			<a href="https://www.baidu.com/">百度一下</a>
+		</div>
+		<div>
+			<iframe class="fontstyle" id="iframe1" src="AlertTest.html">
+				
+			</iframe>
+			
+		</div>
+	</body>
+</html>
